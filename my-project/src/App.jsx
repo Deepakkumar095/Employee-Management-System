@@ -7,14 +7,6 @@ import AddEmployee from "./component/AddEmployee";
 import UpdateEmployee from "./component/UpdateEmployee";
 
 function App() {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-
-  useEffect(() => {
-    const auth = localStorage.getItem("auth");
-    if (auth === "true") {
-      setIsAuthenticated(true);
-    }
-  }, []);
 
   return (
     <>
